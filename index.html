@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Full Stack Developer | React.js, Node.js, MongoDB Expert</title>
+    <meta name="description" content="Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB. Creating scalable web applications with modern JavaScript technologies.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Alex Johnson - Full Stack Developer">
+    <meta property="og:description" content="MERN Stack Expert creating high-performance web applications">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexjohnson.dev">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>AJ</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-testid="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-testid="nav-about">About</a>
+                <a href="#projects" class="nav-link" data-testid="nav-projects">Projects</a>
+                <a href="#skills" class="nav-link" data-testid="nav-skills">Skills</a>
+                <a href="#testimonials" class="nav-link" data-testid="nav-testimonials">Testimonials</a>
+                <a href="#contact" class="nav-link" data-testid="nav-contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" data-testid="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-fade-in-up">
+                    <div class="hero-badge">
+                        <span>Available for freelance work</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Building Digital
+                        <span class="text-primary">Experiences</span>
+                        <br>That Drive Results
+                    </h1>
+                    <p class="hero-description">
+                        Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB. Expert in creating scalable web applications with modern JavaScript technologies that increase user engagement by 40% and conversion rates by 25%.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-testid="button-view-work">
+                            View My Work
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" data-testid="button-contact">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-testid="stat-projects">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-testid="stat-clients">25+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-testid="stat-experience">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Modern developer workspace with dual monitors" 
+                         data-testid="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Designer working on creative layouts with sketches and digital tools" 
+                         data-testid="about-image">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">
+                        Passionate About
+                        <span class="text-primary">Creating Impact</span>
+                    </h2>
+                    <p class="about-description">
+                        I'm a full-stack developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) who thrives on solving complex problems through elegant design and clean code. My approach combines modern JavaScript technologies with user-centered design principles to create scalable web applications that drive real business results.
+                    </p>
+                    <p class="about-description">
+                        With expertise in HTML5, CSS3, and modern JavaScript ES6+, I build responsive, performant applications using React.js for dynamic frontends and Node.js/Express.js for robust backends. My MongoDB database designs ensure efficient data management and seamless user experiences.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature" data-testid="feature-cleancode">
+                            <div class="feature-icon bg-accent">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Clean Code</h4>
+                                <p>Maintainable & Scalable</p>
+                            </div>
+                        </div>
+                        <div class="feature" data-testid="feature-userfocused">
+                            <div class="feature-icon bg-success">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>User-Focused</h4>
+                                <p>Experience Driven</p>
+                            </div>
+                        </div>
+                        <div class="feature" data-testid="feature-performance">
+                            <div class="feature-icon bg-primary">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Performance</h4>
+                                <p>Speed Optimized</p>
+                            </div>
+                        </div>
+                        <div class="feature" data-testid="feature-responsive">
+                            <div class="feature-icon bg-purple">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Responsive</h4>
+                                <p>Mobile First</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="text-primary">Projects</span>
+                </h2>
+                <p class="section-description">
+                    Real-world solutions that drove measurable business impact through thoughtful design and robust development.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Modern e-commerce website interface showing product listings and shopping cart"
+                         class="project-image" data-testid="project-image-1">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title" data-testid="project-title-1">E-Commerce Platform</h3>
+                            <span class="project-status status-live">Live Project</span>
+                        </div>
+                        <p class="project-description" data-testid="project-description-1">
+                            Full-stack e-commerce platform with user authentication, payment processing, and admin dashboard. Built with React.js frontend, Node.js/Express.js backend, and MongoDB database for scalable product management.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric" data-testid="project-metric-1-0">
+                                <div class="metric-value text-success">+35%</div>
+                                <div class="metric-label">Conversion Rate</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-1-1">
+                                <div class="metric-value text-primary">0.8s</div>
+                                <div class="metric-label">Page Speed</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-1-2">
+                                <div class="metric-value text-accent">4.9/5</div>
+                                <div class="metric-label">User Rating</div>
+                            </div>
+                        </div>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ecommerce-demo.example.com" class="btn btn-sm btn-primary" target="_blank" data-testid="project-live-1">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/alexjohnson/ecommerce-platform" class="btn btn-sm btn-outline" target="_blank" data-testid="project-github-1">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Analytics dashboard with charts and social media metrics"
+                         class="project-image" data-testid="project-image-2">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title" data-testid="project-title-2">Social Media Dashboard</h3>
+                            <span class="project-status status-saas">SaaS Product</span>
+                        </div>
+                        <p class="project-description" data-testid="project-description-2">
+                            Real-time analytics dashboard for social media management with data visualization, automated reporting, and multi-platform integration. Features responsive design and dark mode support.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric" data-testid="project-metric-2-0">
+                                <div class="metric-value text-primary">10K+</div>
+                                <div class="metric-label">Active Users</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-2-1">
+                                <div class="metric-value text-success">2M+</div>
+                                <div class="metric-label">Data Points</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-2-2">
+                                <div class="metric-value text-accent">99.9%</div>
+                                <div class="metric-label">Uptime</div>
+                            </div>
+                        </div>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">HTML5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://social-dashboard.example.com" class="btn btn-sm btn-primary" target="_blank" data-testid="project-live-2">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/alexjohnson/social-dashboard" class="btn btn-sm btn-outline" target="_blank" data-testid="project-github-2">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://medium.com/@alexjohnson/building-realtime-dashboard" class="btn btn-sm btn-outline" target="_blank" data-testid="project-case-study-2">
+                                <i class="fas fa-file-text"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card project-featured">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Project management interface with kanban boards and task cards"
+                         class="project-image" data-testid="project-image-3">
+                    <div class="project-featured-content">
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3 class="project-title" data-testid="project-title-3">Task Management App</h3>
+                                <span class="project-status status-mobile">Mobile App</span>
+                            </div>
+                            <p class="project-description" data-testid="project-description-3">
+                                Collaborative project management application with real-time updates, file sharing, and team communication. Built with modern web technologies for optimal performance and user experience.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">JavaScript ES6+</span>
+                                <span class="tech-tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://taskflow.example.com" class="btn btn-sm btn-primary" target="_blank" data-testid="project-live-3">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/alexjohnson/taskflow" class="btn btn-sm btn-outline" target="_blank" data-testid="project-github-3">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics-grid">
+                            <div class="metric" data-testid="project-metric-3-0">
+                                <div class="metric-value text-success">+45%</div>
+                                <div class="metric-label">Team Productivity</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-3-1">
+                                <div class="metric-value text-primary">92%</div>
+                                <div class="metric-label">Task Completion</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-3-2">
+                                <div class="metric-value text-accent">8.5/10</div>
+                                <div class="metric-label">User Engagement</div>
+                            </div>
+                            <div class="metric" data-testid="project-metric-3-3">
+                                <div class="metric-value text-purple">1.2s</div>
+                                <div class="metric-label">Load Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-primary" data-testid="button-view-all-projects">
+                    View All Projects
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Technical <span class="text-primary">Expertise</span>
+                </h2>
+                <p class="section-description">
+                    A comprehensive skillset covering the full spectrum of modern web development and design.
+                </p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-column">
+                    <h3 class="skills-category">
+                        <i class="fas fa-code text-primary"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skill-item" data-testid="frontend-skill-html">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="95" style="background-color: #f97316;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="frontend-skill-css">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="92" style="background-color: #3b82f6;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="frontend-skill-javascript">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript ES6+</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90" style="background-color: #eab308;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="frontend-skill-reactjs">
+                        <div class="skill-header">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="88" style="background-color: #06b6d4;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="frontend-skill-tailwindcss">
+                        <div class="skill-header">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85" style="background-color: #14b8a6;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="frontend-skill-responsivedesign">
+                        <div class="skill-header">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-percent">93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="93" style="background-color: #22c55e;"></div>
+                        </div>
+                    </div>
+
+                    <h3 class="skills-category">
+                        <i class="fas fa-palette text-pink-500"></i>
+                        UI/UX Design
+                    </h3>
+                    <div class="skill-item" data-testid="design-skill-uiuxdesign">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="82" style="background-color: #ec4899;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="design-skill-figma">
+                        <div class="skill-header">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80" style="background-color: #8b5cf6;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="design-skill-adobexd">
+                        <div class="skill-header">
+                            <span class="skill-name">Adobe XD</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75" style="background-color: #ef4444;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="design-skill-prototyping">
+                        <div class="skill-header">
+                            <span class="skill-name">Prototyping</span>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="78" style="background-color: #6366f1;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <h3 class="skills-category">
+                        <i class="fas fa-server text-success"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skill-item" data-testid="backend-skill-nodejs">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="87" style="background-color: #16a34a;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="backend-skill-expressjs">
+                        <div class="skill-header">
+                            <span class="skill-name">Express.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85" style="background-color: #374151;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="backend-skill-mongodb">
+                        <div class="skill-header">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-percent">83%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="83" style="background-color: #15803d;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="backend-skill-restfulapis">
+                        <div class="skill-header">
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90" style="background-color: #2563eb;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="backend-skill-jwtauthentication">
+                        <div class="skill-header">
+                            <span class="skill-name">JWT Authentication</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="82" style="background-color: #ea580c;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-testid="backend-skill-socketio">
+                        <div class="skill-header">
+                            <span class="skill-name">Socket.io</span>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="78" style="background-color: #9333ea;"></div>
+                        </div>
+                    </div>
+
+                    <h3 class="skills-category">
+                        <i class="fas fa-database text-accent"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-item" data-testid="tool-git">
+                            <i class="fab fa-git-alt text-orange-500"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item" data-testid="tool-docker">
+                            <i class="fab fa-docker text-blue-500"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-item" data-testid="tool-aws">
+                            <i class="fab fa-aws text-orange-600"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-item" data-testid="tool-firebase">
+                            <i class="fas fa-fire text-yellow-500"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="tool-item" data-testid="tool-cicd">
+                            <i class="fas fa-code-branch text-purple-500"></i>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="tool-item" data-testid="tool-analytics">
+                            <i class="fas fa-chart-bar text-success"></i>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Client <span class="text-primary">Testimonials</span>
+                </h2>
+                <p class="section-description">
+                    Hear what clients and collaborators say about working together on successful projects.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-testid="testimonial-1">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content" data-testid="testimonial-content-1">
+                        "Alex delivered an exceptional e-commerce platform that exceeded our expectations. The React.js frontend is lightning-fast and the MongoDB backend handles our inventory seamlessly. Sales increased by 35% within the first month!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1-5?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" 
+                             alt="Sarah Chen headshot" 
+                             class="author-avatar" 
+                             data-testid="testimonial-avatar-1">
+                        <div class="author-info">
+                            <div class="author-name" data-testid="testimonial-author-1">Sarah Chen</div>
+                            <div class="author-role" data-testid="testimonial-role-1">CEO, TechStart Inc</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-testid="testimonial-2">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content" data-testid="testimonial-content-2">
+                        "The social media dashboard Alex built with Express.js and real-time data visualization has transformed how we track our campaigns. The JavaScript implementation is clean and the performance is outstanding."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" 
+                             alt="Marcus Rodriguez headshot" 
+                             class="author-avatar" 
+                             data-testid="testimonial-avatar-2">
+                        <div class="author-info">
+                            <div class="author-name" data-testid="testimonial-author-2">Marcus Rodriguez</div>
+                            <div class="author-role" data-testid="testimonial-role-2">Marketing Director, Digital Boost Agency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-testid="testimonial-3">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content" data-testid="testimonial-content-3">
+                        "Working with Alex on our Node.js backend was a game-changer. His expertise in MongoDB optimization and Express.js architecture helped us scale from 100 to 10,000+ users without any performance issues."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" 
+                             alt="Emily Johnson headshot" 
+                             class="author-avatar" 
+                             data-testid="testimonial-avatar-3">
+                        <div class="author-info">
+                            <div class="author-name" data-testid="testimonial-author-3">Emily Johnson</div>
+                            <div class="author-role" data-testid="testimonial-role-3">CTO, ScaleUp Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume">
+        <div class="container">
+            <div class="resume-content">
+                <h2 class="section-title">
+                    Ready to Work <span class="text-primary">Together?</span>
+                </h2>
+                <p class="section-description">
+                    Download my complete resume to see my full experience, education, and project portfolio in detail.
+                </p>
+                
+                <div class="resume-card">
+                    <div class="resume-info">
+                        <h3>Complete Resume & Portfolio</h3>
+                        <p>
+                            Comprehensive overview of my 5+ years in full-stack development, including detailed project breakdowns, client testimonials, and technical certifications.
+                        </p>
+                        <ul class="resume-features">
+                            <li data-testid="resume-feature-0">
+                                <i class="fas fa-check-circle"></i>
+                                Detailed project case studies
+                            </li>
+                            <li data-testid="resume-feature-1">
+                                <i class="fas fa-check-circle"></i>
+                                Technical skill assessments
+                            </li>
+                            <li data-testid="resume-feature-2">
+                                <i class="fas fa-check-circle"></i>
+                                Client references & testimonials
+                            </li>
+                            <li data-testid="resume-feature-3">
+                                <i class="fas fa-check-circle"></i>
+                                Education & certifications
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-download">
+                        <div class="resume-icon">
+                            <i class="fas fa-file-text"></i>
+                        </div>
+                        <button class="btn btn-resume" data-testid="button-download-resume">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                        <p class="resume-meta">PDF Format • Updated December 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Let's <span class="text-primary">Connect</span>
+                </h2>
+                <p class="section-description">
+                    Ready to discuss your next project? I'm always excited to work on challenging problems and create impactful solutions.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item" data-testid="contact-info-email">
+                            <div class="contact-icon bg-primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>alex@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-testid="contact-info-phone">
+                            <div class="contact-icon bg-accent">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-testid="contact-info-location">
+                            <div class="contact-icon bg-success">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com" class="social-btn linkedin" target="_blank" data-testid="social-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" class="social-btn github" target="_blank" data-testid="social-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" class="social-btn twitter" target="_blank" data-testid="social-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required data-testid="input-first-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required data-testid="input-last-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required data-testid="input-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required data-testid="select-subject">
+                                <option value="">Select a subject</option>
+                                <option value="project">New Project Inquiry</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="consultation">Consultation Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required data-testid="textarea-message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="button-send-message">
+                            <i class="fas fa-envelope"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand" data-testid="footer-logo">
+                        <h3>Alex Johnson</h3>
+                        <p>Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB. Creating scalable web applications with modern JavaScript technologies.</p>
+                        <div class="footer-social">
+                            <a href="https://linkedin.com" target="_blank" data-testid="footer-social-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" data-testid="footer-social-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" data-testid="footer-social-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about" data-testid="footer-link-about">About</a></li>
+                            <li><a href="#projects" data-testid="footer-link-projects">Projects</a></li>
+                            <li><a href="#skills" data-testid="footer-link-skills">Skills</a></li>
+                            <li><a href="#contact" data-testid="footer-link-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Apps</li>
+                            <li>UI/UX Design</li>
+                            <li>Consulting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p data-testid="footer-copyright">
+                        © 2025 Alex Johnson. All rights reserved. Built with React.js, Node.js, Express.js & MongoDB.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
